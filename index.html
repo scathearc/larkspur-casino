@@ -27,13 +27,13 @@
   .hero h1 { margin:0 0 10px; font:700 52px/1.02 Fraunces, Georgia, serif; letter-spacing:-.01em; max-width:560px }
   .hero h1 em { font-style:normal; color:var(--gold) }
   .hero p { margin:0 0 22px; color:var(--mute); max-width:460px; font-size:17px }
-  .hero .cta { display:inline-block; background:var(--brand); color:var(--brand-ink); font-weight:800; border-radius:var(--radius); padding:13px 22px }
+  .hero .cta { display:inline-block; background:var(--brand); color:var(--brand-ink); font-weight:800; border-radius:var(--radius); padding:13px 22px; text-decoration:none }
   .hero .flower { position:absolute; right:52px; top:26px; width:230px; height:230px; opacity:.9 }
   h2 { font:700 24px/1 Fraunces, Georgia, serif; margin:30px 0 14px }
   .row { display:grid; grid-template-columns:repeat(6,1fr); gap:14px }
-  .tile { aspect-ratio:3/4; border-radius:var(--radius); background:linear-gradient(160deg,var(--raise),var(--panel)); border:1px solid var(--line); padding:14px; display:flex; flex-direction:column; justify-content:flex-end; font-weight:800 }
-  .tile small { color:var(--mute); font-weight:600 } .tile i { flex:1; display:block; margin:6px 6px 14px; border-radius:50%; background:radial-gradient(circle at 40% 35%, var(--brand), #3a2d86 70%); opacity:.85 }
-  .tile:nth-child(2n) i { border-radius:16px; background:radial-gradient(circle at 40% 35%, var(--gold), #6d4b12 75%) }
+  .tile { aspect-ratio:3/4; border-radius:var(--radius); overflow:hidden; position:relative; background:#efede9; display:flex; flex-direction:column; justify-content:flex-end; padding:14px; font-weight:800; color:#17142b }
+  .tile img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover }
+  .tile span, .tile small { position:relative } .tile small { color:#5b5770; font-weight:600 }
   footer { margin-top:34px; color:var(--mute); font-size:12px }
 </style>
 </head>
@@ -41,7 +41,7 @@
 <header>
   <a class="logo" href="#"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#8f7cff"/><path d="M16 6c3 4 3 8 0 12-3-4-3-8 0-12zm-8 8c4 0 7 2 8 6-4 0-7-2-8-6zm16 0c-1 4-4 6-8 6 1-4 4-6 8-6z" fill="#120f24"/></svg>Larkspur</a>
   <div class="search">Search games</div>
-  <div class="right"><div class="balance">2,500.00 USDC</div><button class="deposit">Deposit</button></div>
+  <div class="right"><div class="balance">Demo credits</div><button class="deposit">Deposit</button></div>
 </header>
 <aside><a class="on" href="#">Originals</a><a href="#">Slots</a><a href="#">Live tables</a><a href="#">Sports</a><h6>ACCOUNT</h6><a href="#">Promotions</a><a href="#">VIP Club</a><a href="#">Wallet</a></aside>
 <main>
@@ -52,7 +52,7 @@
     <a class="cta" href="#">Play originals</a>
   </section>
   <h2>Larkspur Originals</h2>
-  <div class="row"><div class="tile"><i></i>Mines<small>Originals</small></div><div class="tile"><i></i>Plinko<small>Originals</small></div><div class="tile"><i></i>Crash<small>Originals</small></div><div class="tile"><i></i>Blackjack<small>Originals</small></div><div class="tile"><i></i>Dice<small>Originals</small></div><div class="tile"><i></i>Roulette<small>Originals</small></div></div>
+  <div class="row"><div class="tile"><img src="assets/cards/mines.webp" alt=""><span>Mines</span><small>Originals</small></div><div class="tile"><img src="assets/cards/plinko.webp" alt=""><span>Plinko</span><small>Originals</small></div><div class="tile"><img src="assets/cards/crash.webp" alt=""><span>Crash</span><small>Originals</small></div><div class="tile"><img src="assets/cards/blackjack.webp" alt=""><span>Blackjack</span><small>Originals</small></div><div class="tile"><img src="assets/cards/dice.webp" alt=""><span>Dice</span><small>Originals</small></div><div class="tile"><img src="assets/cards/roulette.webp" alt=""><span>Roulette</span><small>Originals</small></div></div>
   <footer>Larkspur is a fictional casino brand used to demonstrate kinematic. Play credits only.</footer>
 </main>
 </body>
